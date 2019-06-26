@@ -109,6 +109,7 @@ int main(){
 
     tree T;
     
+    
     T.insert(5);
     T.insert(4);
     T.insert(6);
