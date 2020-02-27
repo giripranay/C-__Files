@@ -6,10 +6,11 @@ struct node{
     node* next;
 };
 
-node* head = NULL;
+
 
 class linkedList{
     public:
+        node* head = NULL;
         void insertNode(int data);
         void deleteNode(int data);
         void printNodes();
@@ -57,12 +58,12 @@ void linkedList::printNodes(){
 }
 
 int main(){
-    linkedList l;
-    l.insertNode(6);
-    l.insertNode(7);
-    l.insertNode(8);
-    l.deleteNode(8);
-    l.deleteNode(6);
-    l.printNodes();
+    linkedList l1,l2;
+    l1.insertNode(6);
+    l1.insertNode(7);
+    l2.insertNode(8);
+    //l.deleteNode(8);
+    //l.deleteNode(6);
+    l1.printNodes();
     return 0;
 }
